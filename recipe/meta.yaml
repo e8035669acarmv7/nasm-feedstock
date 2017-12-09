@@ -1,4 +1,4 @@
-{% set version = "2.11.06" %}
+{% set version = "2.11.08" %}
 
 {% set VC_VERSION = os.environ.get("VC_VERSION", "")|string %}
 
@@ -9,7 +9,7 @@ package:
 source:
   fn: nasm-{{ version }}.tar.gz
   url: http://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
-  sha256: 64daa8bb04c8e3383c6b1cc23d26d8af030456ac442bda2fdd32cd56326139b9
+  sha256: ef6d1af3a4ede67f5eb8d4e76c72003e2b1eae3fd1b721f79f0c0abea00dadc0
 
 build:
   number: 0
