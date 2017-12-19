@@ -1,6 +1,5 @@
 matrix:
   - []
-  - [[VC_VERSION, 9], [CONDA_PY, 27]]
   - [[VC_VERSION, 14], [CONDA_PY, 36]]
 
 travis:
