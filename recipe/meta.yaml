@@ -12,7 +12,7 @@ source:
   sha256: 4749fd76a8a26dc7d8871bc97cc2c16cfa0c933f984a13128e94f464f417531a
 
 build:
-  number: 0
+  number: 1
 
 {% if VC_VERSION == "" %}
   skip: true                 # [win]
@@ -20,12 +20,11 @@ build:
   skip: true                 # [unix]
 {% endif %}
 
-  features:
-    - vc{{ VC_VERSION }}     # [win]
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
 
 test:
   requires:
