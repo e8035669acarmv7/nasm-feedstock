@@ -14,14 +14,16 @@ Summary: Netwide Assembler: an assembler targetting the Intel x86 series of proc
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nasm-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nasm-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nasm-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nasm-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nasm-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nasm-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/nasm-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/nasm-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/nasm-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/nasm-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/nasm-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/nasm-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nasm/badges/version.svg)](https://anaconda.org/conda-forge/nasm)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nasm/badges/downloads.svg)](https://anaconda.org/conda-forge/nasm)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nasm-green.svg)](https://anaconda.org/conda-forge/nasm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nasm.svg)](https://anaconda.org/conda-forge/nasm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nasm.svg)](https://anaconda.org/conda-forge/nasm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nasm.svg)](https://anaconda.org/conda-forge/nasm) |
 
 Installing nasm
 ===============
