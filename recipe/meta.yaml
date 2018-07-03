@@ -27,9 +27,6 @@ requirements:
   host:
 
 test:
-  requires:
-    - vc {{ VC_VERSION }}    # [win]
-
   commands:
     - nasm -h
     - nasm -version
