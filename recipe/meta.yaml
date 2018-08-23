@@ -12,25 +12,15 @@ source:
   sha256: 4749fd76a8a26dc7d8871bc97cc2c16cfa0c933f984a13128e94f464f417531a
 
 build:
-  number: 0
-
-{% if VC_VERSION == "" %}
-  skip: true                 # [win]
-{% elif VC_VERSION != "" %}
-  skip: true                 # [unix]
-{% endif %}
-
-  features:
-    - vc{{ VC_VERSION }}     # [win]
+  number: 1
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
 
 test:
-  requires:
-    - vc {{ VC_VERSION }}    # [win]
-
   commands:
     - nasm -h
     - nasm -version
