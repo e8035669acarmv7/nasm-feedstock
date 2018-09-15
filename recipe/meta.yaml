@@ -1,7 +1,5 @@
 {% set version = "2.13.02" %}
 
-{% set VC_VERSION = os.environ.get("VC_VERSION", "")|string %}
-
 package:
   name: nasm
   version: {{ version }}
