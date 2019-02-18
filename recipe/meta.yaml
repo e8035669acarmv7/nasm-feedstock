@@ -8,6 +8,9 @@ source:
   fn: nasm-{{ version }}.tar.gz
   url: http://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
   sha256: 4749fd76a8a26dc7d8871bc97cc2c16cfa0c933f984a13128e94f464f417531a
+  patches:
+    # patch as from https://github.com/spack/spack/pull/8307
+    - 0001-Remove-invalid-pure_func-qualifiers.patch
 
 build:
   number: 1001
