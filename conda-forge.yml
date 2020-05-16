@@ -1,7 +1,7 @@
 matrix:
-  - []
-  - [[VC_VERSION, 9], [CONDA_PY, 27]]
-  - [[VC_VERSION, 14], [CONDA_PY, 36]]
+- []
+- [[VC_VERSION, 9], [CONDA_PY, 27]]
+- [[VC_VERSION, 14], [CONDA_PY, 36]]
 
 travis:
   secure:
@@ -9,3 +9,4 @@ travis:
 appveyor:
   secure:
     BINSTAR_TOKEN: ipv/06DzgA7pzz2CIAtbPxZSsphDtF+JFyoWRnXkn3O8j7oRe3rzqj3LOoq2DZp4
+conda_forge_output_validation: true
