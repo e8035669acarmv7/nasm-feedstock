@@ -1,4 +1,4 @@
-{% set version = "2.13.02" %}
+{% set version = "2.15.05" %}
 
 package:
   name: nasm
@@ -6,14 +6,11 @@ package:
 
 source:
   fn: nasm-{{ version }}.tar.gz
-  url: http://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
-  sha256: 4749fd76a8a26dc7d8871bc97cc2c16cfa0c933f984a13128e94f464f417531a
-  patches:
-    # patch as from https://github.com/spack/spack/pull/8307
-    - 0001-Remove-invalid-pure_func-qualifiers.patch
+  url: https://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
+  sha256: e2b1c1cb0250fbf2a91c6fdbf42b3b9d568cbe0d7b90af64e02f128c67ae4f83
 
 build:
-  number: 1001
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
