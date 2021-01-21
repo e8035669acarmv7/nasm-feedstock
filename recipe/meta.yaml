@@ -1,4 +1,4 @@
-{% set version = "2.15.05" %}
+{% set version = "2.14.02" %}
 
 package:
   name: nasm
@@ -7,7 +7,7 @@ package:
 source:
   fn: nasm-{{ version }}.tar.gz
   url: https://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
-  sha256: e2b1c1cb0250fbf2a91c6fdbf42b3b9d568cbe0d7b90af64e02f128c67ae4f83
+  sha256: 7cf28f57f5a97331cc413cfe99dc76c0e9c11e5c7eedbcfcf66652e5b1cadd05
 
 build:
   number: 0
