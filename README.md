@@ -3,7 +3,7 @@ About nasm
 
 Home: http://www.nasm.us
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nasm-feedstock/blob/master/LICENSE.txt)
 
@@ -162,4 +162,5 @@ Feedstock Maintainers
 =====================
 
 * [@jakirkham](https://github.com/jakirkham/)
+* [@rhpvorderman](https://github.com/rhpvorderman/)
 
