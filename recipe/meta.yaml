@@ -1,4 +1,4 @@
-{% set version = "2.13.02" %}
+{% set version = "2.14.02" %}
 
 package:
   name: nasm
@@ -6,20 +6,18 @@ package:
 
 source:
   fn: nasm-{{ version }}.tar.gz
-  url: http://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
-  sha256: 4749fd76a8a26dc7d8871bc97cc2c16cfa0c933f984a13128e94f464f417531a
-  patches:
-    # patch as from https://github.com/spack/spack/pull/8307
-    - 0001-Remove-invalid-pure_func-qualifiers.patch
+  url: https://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
+  sha256: 7cf28f57f5a97331cc413cfe99dc76c0e9c11e5c7eedbcfcf66652e5b1cadd05
 
 build:
-  number: 1001
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - make  # [unix]
+    - perl  # [win]
   host:
 
 test:
@@ -30,10 +28,11 @@ test:
 
 about:
   home: http://www.nasm.us
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   summary: "Netwide Assembler: an assembler targetting the Intel x86 series of processors."
 
 extra:
   recipe-maintainers:
     - jakirkham
+    - rhpvorderman
