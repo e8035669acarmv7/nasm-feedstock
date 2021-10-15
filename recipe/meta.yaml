@@ -9,8 +9,9 @@ source:
   url: https://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
   sha256: e2b1c1cb0250fbf2a91c6fdbf42b3b9d568cbe0d7b90af64e02f128c67ae4f83
   patches:
-    # patch as from https://github.com/netwide-assembler/nasm/commit/d85890aac74040abbddb32052f72eda0f52f4039
-    - 0001-Makefile.in-fix-warning-dependencies.patch
+    # Diff between 3a81150867e2b1379f14e0e68f76d19b091a31b6 (master as of 2021-10-15)
+    # and the nasm-2.15.05 tag for the msvc.mak file.
+    - nmake-fixes.patch
 
 build:
   number: 0
