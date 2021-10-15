@@ -1,5 +1,5 @@
 diff --git a/Mkfiles/msvc.mak b/Mkfiles/msvc.mak
-index ee2022d3..353d33ba 100644
+index ee2022d3..eee45a1a 100644
 --- a/Mkfiles/msvc.mak
 +++ b/Mkfiles/msvc.mak
 @@ -64,7 +64,10 @@ X               = .exe
@@ -44,8 +44,7 @@ index ee2022d3..353d33ba 100644
 -asm\warnings.time: $(ALLOBJ:.@OBJEXT@=.c)
 +asm\warnings.time: $(ALLOBJ_NW:.@OBJEXT@=.c)
  	: > asm\warnings.time
--	$(MAKE) $(WARNFILES)
-+	$(MAKE) $(WARNFILES:=.time)
+ 	$(MAKE) $(WARNFILES)
  
 -asm\warnings.c: asm\warnings.pl asm\warnings.time
 +asm\warnings.c.time: asm\warnings.pl asm\warnings.time
