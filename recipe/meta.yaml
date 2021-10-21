@@ -10,12 +10,12 @@ source:
   sha256: 7cf28f57f5a97331cc413cfe99dc76c0e9c11e5c7eedbcfcf66652e5b1cadd05
 
 build:
-  number: 0
-  skip: true  # [win and vc<14]
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - gnuconfig  # [unix]
     - make  # [unix]
     - perl  # [win]
   host:
