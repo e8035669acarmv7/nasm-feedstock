@@ -14,12 +14,12 @@ source:
     - nmake-fixes.patch
 
 build:
-  number: 0
-  skip: true  # [win and vc<14]
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - gnuconfig  # [unix]
     - make  # [unix]
     - perl  # [win]
   host:
