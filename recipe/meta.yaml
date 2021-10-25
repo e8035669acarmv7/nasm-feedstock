@@ -8,13 +8,10 @@ source:
   fn: nasm-{{ version }}.tar.gz
   url: https://www.nasm.us/pub/nasm/releasebuilds/{{ version }}/nasm-{{ version }}.tar.gz
   sha256: e2b1c1cb0250fbf2a91c6fdbf42b3b9d568cbe0d7b90af64e02f128c67ae4f83
-  patches:
-    # Diff between 3a81150867e2b1379f14e0e68f76d19b091a31b6 (master as of 2021-10-15)
-    # and the nasm-2.15.05 tag for the msvc.mak file. Except line 102 and some manual edit at line 241.
-    - nmake-fixes.patch
 
 build:
-  number: 1
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
